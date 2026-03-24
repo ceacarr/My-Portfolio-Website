@@ -2,8 +2,8 @@
   @licance Apache-2.0
 
 */
-import Header from "/components/Header";
-import Hero from "/components/Hero";
+import Header from "/Components/Header";
+import Hero from "/Components/Hero";
 import About from "../Components/About";
 import Skill from "../Components/Skill"; 
 import Work from "../Components/Work";
