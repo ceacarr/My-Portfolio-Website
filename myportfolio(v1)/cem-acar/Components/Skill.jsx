@@ -67,7 +67,8 @@ const Skill = () => {
    <p className="text-zinc-400 mt-3 mb-8 max-w-[90ch]">
    Always learning, always building. Here is the stack I use to turn complex ideas into functional web solutions.                         
    </p>
-   <div className="grid grid-cols-1 lg:grid-cols-3 gap-40 items-start ">
+   
+   <div className="grid grid-cols-3 gap-x-4 gap-y-10 items-start ">
        <div> 
         <h3 className="text-zinc-200 text-lg font-semibold mb-5">Programming & Frameworks</h3>
         </div>

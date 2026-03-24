@@ -68,7 +68,7 @@ const Contact = () => {
                 htmlFor="name" 
                 className="label"
                 >
-                   Name
+                  Your Name
                 </label>
                 <input 
                 type="text" 
@@ -86,7 +86,7 @@ const Contact = () => {
                 htmlFor="email" 
                 className="label"
                 >
-                    Email
+                   Your Email
                 </label>
                 <input 
                 type="email" 

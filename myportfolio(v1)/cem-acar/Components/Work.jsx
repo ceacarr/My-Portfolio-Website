@@ -27,7 +27,7 @@ const works = [
     imgSrc: '/images/personel.png',
     title: 'Staff Salary Tracking',
     tags: ['Web-design', 'Asp.Net'],
-    projectLink: 'https://github.com/codewithsadee-org/wealthome'
+    projectLink: 'https://github.com/ceacarr/Personel-Maas-Takip-Programi-PMTP'
   },
   {
     imgSrc: '/images/calculator.png',
