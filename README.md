@@ -23,7 +23,7 @@ Bu proje, bir yazılım geliştiricisi olarak yeteneklerimi, projelerimi ve ilet
 | Masaüstü Görünümü | Mobil Görünümü |
 | :--- | :--- |
 | ![Desktop Screenshot](https://via.placeholder.com/600x400?text=Desktop+View) | ![Mobile Screenshot](https://via.placeholder.com/200x400?text=Mobile+View) |
-*(Not: Siteni yayına aldıktan sonra bu kısımdaki linkleri kendi ekran görüntülerinle güncelleyebilirsin.)*
+
 
 ## 🚀 Kurulum
 
