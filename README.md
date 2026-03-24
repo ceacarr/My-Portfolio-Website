@@ -14,9 +14,9 @@ Bu proje, bir yazılım geliştiricisi olarak yeteneklerimi, projelerimi ve ilet
 ##  Öne Çıkan Özellikler
 
 * **Tam Responsive Tasarım:** 
-* **Modern UI/UX:** Karanlık mod (Dark Mode) öncelikli, temiz ve okunabilir arayüz.
-* **Dinamik Mobil Menü:** JavaScript state yönetimi ile çalışan akıcı navigasyon.
-* **Çalışan İletişim Formu:** API entegrasyonu sayesinde doğrudan e-posta kutuma düşen mesajlar.
+* **Modern UI/UX** 
+* **Dinamik Mobil Menü** 
+* **Çalışan İletişim Formu** 
 
 ## 📸 Ekran Görüntüleri
 
