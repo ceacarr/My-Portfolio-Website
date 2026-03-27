@@ -18,13 +18,6 @@ Bu proje, bir yazılım geliştiricisi olarak yeteneklerimi, projelerimi ve ilet
 * **Dinamik Mobil Menü** 
 * **Çalışan İletişim Formu** 
 
-## 📸 Ekran Görüntüleri
-
-| Masaüstü Görünümü | Mobil Görünümü |
-| :--- | :--- |
-| ![Desktop Screenshot](https://via.placeholder.com/600x400?text=Desktop+View) | ![Mobile Screenshot]![Image ](https://github.com/user-attachments/assets/d0238bf8-371e-4f83-9f93-1e509311a59c) |
-
-
 
 ## 🚀 Kurulum
 
