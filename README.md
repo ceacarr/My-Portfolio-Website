@@ -22,7 +22,8 @@ Bu proje, bir yazılım geliştiricisi olarak yeteneklerimi, projelerimi ve ilet
 
 | Masaüstü Görünümü | Mobil Görünümü |
 | :--- | :--- |
-| ![Desktop Screenshot](https://via.placeholder.com/600x400?text=Desktop+View) | ![Mobile Screenshot](https://via.placeholder.com/200x400?text=Mobile+View) |
+| ![Desktop Screenshot](https://via.placeholder.com/600x400?text=Desktop+View) | ![Mobile Screenshot]![Image ](https://github.com/user-attachments/assets/d0238bf8-371e-4f83-9f93-1e509311a59c) |
+
 
 
 ## 🚀 Kurulum
