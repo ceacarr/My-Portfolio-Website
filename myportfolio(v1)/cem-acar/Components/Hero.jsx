@@ -18,10 +18,10 @@ const Hero = () => {
         </h2>
         <div className="flex flex-wrap gap-4 mb-10 ">
   <ButtonPrimary 
-    href="/images/CEM ACAR ENG.pdf"
+    href="/images/CEM ACAR CV.pdf"
     label="Download CV"
     icon="download"
-    download="CEM ACAR ENG.pdf"
+    download="CEM ACAR CV.pdf"
     target="_blank"
   />
   <ButtonOutline 
