@@ -12,6 +12,12 @@ const works = [
     projectLink: 'https://github.com/ceacarr/CampApp'
   },
   {
+    imgSrc: '/images/pronnexx.png',
+    title: 'Pronnex Project Management',
+    tags: ['React', 'Development'],
+    projectLink: 'https://github.com/ceacarr/Pronnex'
+  },
+  {
     imgSrc: '/images/porsche.png',
     title: 'Museum of Porsche',
     tags: ['HTML', 'CSS'],
@@ -29,12 +35,7 @@ const works = [
     tags: ['Web-design', 'Asp.Net'],
     projectLink: 'https://github.com/ceacarr/Personel-Maas-Takip-Programi-PMTP'
   },
-  {
-    imgSrc: '/images/calculator.png',
-    title: 'Investment Calculator',
-    tags: ['React', 'Development'],
-    projectLink: 'https://github.com/ceacarr/Investment-Calculator'
-  },
+  
 
 ];
 
