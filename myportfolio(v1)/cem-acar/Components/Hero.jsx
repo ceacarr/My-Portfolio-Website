@@ -35,7 +35,7 @@ const Hero = () => {
         <div className="image ">
             <figure className="w-full max-w-[360px] md:max-w-[480px] overflow-hidden rounded-3xl shadow-2xl ">
                 <img 
-                src="/images/image2.jpeg"
+                src="/images/me.png"
                 width={256}
                 height={256}
                 alt="Cem Acar"

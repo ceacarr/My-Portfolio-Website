@@ -4,57 +4,74 @@
 
 import SkillCard from "./SkillCard";
 
-const skillItem = [
-
-   {
-    imgSrc: '/images/javascript.svg',
-    label: 'JavaScript (ES6+)',
-    desc: 'Interaction'
-  },
-    {
-    imgSrc: '/images/png-sql.png',
-    label: 'MySQL',
-    desc: 'Database'
+const skillGroups = [
+  {
+    title: "Frontend Development",
+    desc: "Building responsive, interactive and clean user interfaces.",
+    items: [
+      {
+        imgSrc: "/images/javascript.svg",
+        label: "JavaScript (ES6+)",
+        desc: "Interaction",
+      },
+      {
+        imgSrc: "/images/react.svg",
+        label: "React.js",
+        desc: "Framework",
+      },
+      {
+        imgSrc: "/images/css3.svg",
+        label: "CSS",
+        desc: "User Interface",
+      },
+      {
+        imgSrc: "/images/tailwindcss.svg",
+        label: "TailwindCSS",
+        desc: "Styling",
+      },
+    ],
   },
   {
-    imgSrc: '/images/nodejs.svg',
-    label: 'NodeJS',
-    desc: 'Web Server'
+    title: "Backend Development",
+    desc: "Creating server-side logic, APIs and application services.",
+    items: [
+      {
+        imgSrc: "/images/nodejs.svg",
+        label: "NodeJS",
+        desc: "JavaScript Runtime",
+      },
+      {
+        imgSrc: "/images/expressjs.svg",
+        label: "ExpressJS",
+        desc: "Backend Framework",
+      },
+      {
+        imgSrc: "/images/net-logo.png",
+        label: ".Net",
+        desc: "Backend Framework",
+      },
+    ],
   },
   {
-    imgSrc: '/images/react.svg',
-    label: 'React.js',
-    desc: 'Framework'
-  },
-  {
-    imgSrc: '/images/mongodb.svg',
-    label: 'MongoDB',
-    desc: 'Database'
-  },
-   {
-    imgSrc: '/images/css3.svg',
-    label: 'CSS',
-    desc: 'User Interface'
-  },
-   {
-    imgSrc: '/images/net-logo.png',
-    label: '.Net',
-    desc: 'Framework'
-  },
-  {
-    imgSrc: '/images/git-icon.png',
-    label: 'Git Github',
-    desc: 'Version Control'
-  },
-  {
-    imgSrc: '/images/tailwindcss.svg',
-    label: 'TailwindCSS',
-    desc: 'User Interface'
-  },
-  {
-    imgSrc: '/images/expressjs.svg',
-    label: 'ExpressJS',
-    desc: 'Node Framework'
+    title: "Database & Tools",
+    desc: "Managing data, version control and development workflow.",
+    items: [
+      {
+        imgSrc: "/images/mongodb.svg",
+        label: "MongoDB",
+        desc: "NoSQL Database",
+      },
+      {
+        imgSrc: "/images/png-sql.png",
+        label: "MySQL",
+        desc: "Relational Database",
+      },
+      {
+        imgSrc: "/images/git-icon.png",
+        label: "Git Github",
+        desc: "Version Control",
+      },
+    ],
   },
 ];
 
@@ -67,30 +84,30 @@ const Skill = () => {
    <p className="text-zinc-400 mt-3 mb-8 max-w-[90ch]">
    Always learning, always building. Here is the stack I use to turn complex ideas into functional web solutions.                         
    </p>
-   
-   <div className="grid grid-cols-3 gap-x-4 gap-y-10 items-start ">
-       <div> 
-        <h3 className="text-zinc-200 text-lg font-semibold mb-5">Programming & Frameworks</h3>
-        </div>
-  <div>
-       <h3 className="text-zinc-200 text-lg font-semibold mb-5">Databases</h3>
-  </div>
-  <div>
-      <h3 className="text-zinc-200 text-lg font-semibold mb-5">Tools</h3>
-  </div>
-</div>
 
-   <div className="grid gap-3 grid-cols-3 mb-10">
-    {
-    skillItem.map(({ imgSrc, label, desc }, key) => (
+   <div className="grid gap-5 lg:grid-cols-3 mb-10">
+    {skillGroups.map(({ title, desc, items }, groupKey) => (
+      <div
+        key={groupKey}
+        className="rounded-3xl ring-1 ring-inset ring-zinc-50/10 bg-zinc-800/40 p-5 transition-colors hover:bg-zinc-800/70"
+      >
+        <div className="mb-5">
+          <h3 className="text-zinc-100 text-xl font-semibold">{title}</h3>
+          <p className="mt-2 text-sm leading-6 text-zinc-400">{desc}</p>
+        </div>
+
+        <div className="grid gap-3">
+          {items.map(({ imgSrc, label, desc }, key) => (
             <SkillCard
             key={key}
             imgSrc={imgSrc}
             label={label}
             desc={desc}
             />
-    )) 
-} 
+          ))}
+        </div>
+      </div>
+    ))}
 </div>
    </div>
     </section>

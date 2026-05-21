@@ -8,37 +8,37 @@ import PropTypes from "prop-types";
 const ProjectCards = ({
    imgSrc,
    title,
+   desc,
    tags,
    projectLink,
+   variant = "default",
    classes
 }) => {
+  const isFeatured = variant === "featured";
+  const isCompact = variant === "compact";
+
   return (
-    <div className={"relative p-5 duration-500 hover:-translate-y-2 hover:shadow-xl rounded-2xl bg-zinc-800 hover:bg-zinc-700/50 active:bg-zinc-700/60 ring-1 ring-inset ring-zinc-50/5 transition colors" + classes}>
-       <figure className="img-box aspect-square rounded-lg overflow-hidden mb-3 ">
+    <div className={`relative overflow-hidden rounded-3xl bg-zinc-800/80 ring-1 ring-inset ring-zinc-50/10 transition-all duration-300 hover:-translate-y-1 hover:bg-zinc-800 hover:shadow-xl ${isCompact ? "p-3" : "p-4"} ${classes || ""}`}>
+       <figure className={`img-box overflow-hidden rounded-2xl bg-zinc-900 ${isFeatured ? "aspect-[16/10] mb-5" : isCompact ? "aspect-[16/9] mb-3" : "aspect-square mb-3"}`}>
            <img 
            src={imgSrc}
            alt={title}
            loading='lazy'
-           className="img-cover"
+           className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
            />
        </figure>
-       <div className="flex items-center justify-between gap-4 ">
-               <div>
-                <h3 className="title-1 mb-3">
+       <div className="flex items-start justify-between gap-4">
+               <div className="min-w-0">
+                <h3 className={`${isFeatured ? "text-2xl" : "text-lg"} font-semibold text-zinc-50`}>
                     {title}
                 </h3>
-           <div className="flex flex-wrap items-center gap-2 ">
-            {tags.map(( label, key) => (
-                 <span 
-                 key={key} 
-                 className="h-7 items-center text-sm text-zinc-400 bg-zinc-50/5 grid px-2 rounded-lg "
-                 >
-                    {label}
-                 </span>
-            ))}
-            </div>
+                {desc && (
+                  <p className={`${isFeatured ? "mt-3 text-sm leading-6" : "mt-2 text-xs leading-5"} text-zinc-400`}>
+                    {desc}
+                  </p>
+                )}
           </div>
-   <div className="w-11 h-11 rounded-lg grid place-items-center bg-sky-400 text-zinc-950 shrink-0 mt-auto ">
+   <div className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-sky-400 text-zinc-950">
    <span className="material-symbols-rounded" aria-hidden='true'>
     arrow_outward
     </span>
@@ -56,9 +56,10 @@ const ProjectCards = ({
 ProjectCards.PropTypes = {
     imgSrc: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
-    tags: PropTypes.string.isRequired,
+    desc: PropTypes.string,
+    tags: PropTypes.arrayOf(PropTypes.string).isRequired,
     projectLink:PropTypes.string.isRequired,
+    variant: PropTypes.oneOf(["default", "featured", "compact"]),
     classes:PropTypes.string.isRequired
 }
-
 export default ProjectCards

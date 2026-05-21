@@ -1,16 +1,7 @@
  /* @copyright 2026 Cem Acar. 
   @licance Apache-2.0
 */
-const aboutItems = [
-  {
-    label: 'Project done',
-    number: 5
-  },
-  {
-    label: 'Years of experience',
-    number: 1
-  }
-];
+
 const About = () => {
   return (
     <section
@@ -30,17 +21,7 @@ const About = () => {
         <br />
   
         <div className="flex flex-wrap items-center gap-4 md:gap-7 ">
-            {
-                aboutItems.map(({label, number } ,key ) => (
-                <div key={key}>
-                       <div className="flex items-center md:mb-2">
-                       <span className="text-2xl font-semi md:text-4xl">{number}</span>
-                       <span className="text-sky-400 font-semibold md:text-3xl">+</span>
-                       </div>
-                       <p className="text-sm text-zinc-500">{label}</p>
-                </div>
-            ))
-        }
+         
              <img 
              src="/images/icons8-code-64.png" 
              alt="Logo" 
