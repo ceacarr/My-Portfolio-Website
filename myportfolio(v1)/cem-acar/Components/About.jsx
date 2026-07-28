@@ -12,11 +12,14 @@ const About = () => {
     
        <div className="bg-zinc-800/50 p-7 rounded-2xl md:p-12 ">
         <p className="text-zin-300 mb-4 md:mb-8 md:text-xl md:[max-w-[60ch]">
-                     Hello! I'm Cem, a Management Information Systems student at Nisantası University. I was born in Balıkesir. I'm 24 years old and live in Istanbul. 
-                     I'm a future Front-End Developer candidate with a great passion for developing user-centric web applications. 
-                     I have experience developing projects using JavaScript, HTML, CSS, and ASP.NET, and I'm currently focusing on learning React and Node.js. 
-                     I'm skilled in full-stack development concepts, including API integration and secure authentication. 
-                     I aim to gain professional experience using my technical skills and in a collaborative development environment.
+                      Hello! I'm Cem, a 2026 Management Information Systems graduate from Nisantasi University. 
+                      I was born in Balıkesir. I'm 24 years old and live in Istanbul.
+                      I'm a Front-End Developer with a great passion for developing 
+                      user-centric web applications. I have experience developing projects 
+                      using JavaScript, HTML, CSS, React, Node.js, and ASP.NET. I'm skilled
+                       in full-stack development concepts, including API integration and
+                       secure authentication. I aim to gain professional experience using 
+                       my technical skills in a collaborative development environment.
         </p>
         <br />
   
